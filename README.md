@@ -6,7 +6,9 @@ An end-to-end Machine Learning project that predicts **e-commerce delivery time 
 
 # 🌐 Live Demo
 https://olist-delivery-time-prediction-menqktrznudvjuutmmupt7.streamlit.app/
+
 ---
+
 ##  Project Overview
 
 Timely delivery is critical for e-commerce platforms.  
@@ -134,29 +136,10 @@ The dashboard is organized into four tabs:
 
 ---
 
-##  Project Structure
-
-.
-├── app.py  
-├── delivery_time_model.pkl  
-├── model_columns.json  
-├── Feature_imp_olist.png  
-├── shap_olist.png  
-├── olist_orders_dataset.csv  
-├── olist_order_items_dataset.csv  
-├── olist_sellers_dataset.csv  
-├── requirements.txt  
-└── README.md  
-
----
-
 ##  Key Learnings
-
-- ML models require training-time dependencies at inference
-- Freight is the strongest proxy for delivery delay
-- Seller experience improves delivery reliability
 - Explainability is critical for trust in ML systems
-- Linux deployment is case-sensitive (file names matter)
+- Serialized ML models require all training-time dependencies at inference
+- Deployment environments can behave differently from local setups
 
 ---
 
@@ -172,8 +155,3 @@ The dashboard is organized into four tabs:
 - Streamlit
 
 ---
-
-
-##  Acknowledgements
-
-Dataset provided by Olist (Brazilian E-commerce).
