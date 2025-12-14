@@ -17,9 +17,11 @@ def load_model():
 
 try:
     model, model_cols = load_model()
-except:
-    st.error(" Could not load model or columns file.")
+except Exception as e:
+    st.error("❌ Model loading failed")
+    st.exception(e)
     st.stop()
+
 
 # Load Olist Data for KPI Analytics
 @st.cache_data
@@ -315,4 +317,5 @@ SHAP confirms:
 
     st.markdown("---")
     st.success("This section summarizes how the model works and explains delivery delays using data-driven insights.")
+
 
